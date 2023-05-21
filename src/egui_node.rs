@@ -317,7 +317,7 @@ impl Node for EguiNode {
             };
 
         let swap_chain_texture =
-            if let Some(swap_chain_texture) = extracted_window.swap_chain_texture.as_ref() {
+            if let Some(swap_chain_texture) = extracted_window.swap_chain_texture_view.as_ref() {
                 swap_chain_texture
             } else {
                 return Ok(()); // No swapchain texture
